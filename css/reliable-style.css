@@ -177,14 +177,14 @@ ul li:last-child {
 .h1-sample {
   font-size: 2.4rem;
   font-weight: bold;
-  color: var(--yellow);
+  color: var(--primary-blue);
 }
 
 .h2-sample {
   font-family: var(--secondary-font);
   font-style: italic;
   font-size: 1.25rem;
-  color: var(--grey50);
+  color: var(--primary-blue);
 }
 
 p.typography-sample {
@@ -202,23 +202,24 @@ em {
 }
 
 .column a {
-  font-family: var(--primary-font);
-  color: var(--blue2);
+  font-family: var(--secondary-font);
+  color: var(--primary-blue);
   text-decoration: none;
+  font-weight: 600;
 }
 
 .column a:hover {
   color: var(--primary-blue);
+  text-decoration: underline;
 }
 
 p[class*="font-details-"] {
-  margin-top: 0.5rem;
-  margin-bottom: calc(2 * var(--white-space));
+  margin-top: 0.1rem;
+  margin-bottom: 0.5rem;
   font-size: 0.75rem;
   font-family: var(--secondary-font);
   color: #6f6f6f;
 }
-
 
 @media (min-width: 800px) {
   main {

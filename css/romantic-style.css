@@ -1,12 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Annapurna+SIL:wght@400;700&family=MonteCarlo&family=WindSong&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Annapurna+SIL:wght@400;700&family=MonteCarlo&family=WindSong&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Days+One&display=swap");
 
 :root {
   --primary-rose: #d6aa9f;
-  --rose2: #D7C2B2;
-  --secondary-green: #B1B3A1;
-  --dark-beige: #595554;
-  --light-beige: #EEEBE8;
+  --rose2: #d7c2b2;
+  --secondary-green: #b1b3a1;
+  --dark-beige: #524b4b;
+  --light-beige: #eeebe8;
 
   --primary-font: "MonteCarlo", cursive;
   --secondary-font: "Annapurna SIL", serif;
@@ -49,16 +49,15 @@ ul li {
   font-weight: 700;
   text-align: center;
   border-radius: 25px;
-  transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease, box-shadow 0.2s ease, transform 0.2s ease; 
+  transition: background-color 0.3s ease, border-color 0.3s ease,
+    color 0.3s ease, box-shadow 0.2s ease, transform 0.2s ease;
   cursor: pointer;
-  box-shadow: 0 0 0 4px var(--secondary-green),
-  0 0 0 6px var(--secondary-green);
+  box-shadow: 0 0 0 4px var(--secondary-green), 0 0 0 6px var(--secondary-green);
 }
 
 .secondary-button:hover {
-    box-shadow: 0 0 0 4px var(--light-beige), 
-                0 0 0 6px var(--secondary-green);
-                color: var(--light-beige);
+  box-shadow: 0 0 0 4px var(--light-beige), 0 0 0 6px var(--secondary-green);
+  color: var(--light-beige);
 }
 
 .secondary-button:active {
@@ -66,30 +65,29 @@ ul li {
 }
 
 .primary-button {
-    display: inline-block;
-    padding: 10px 30px;
-    font-size: 16px;
-    font-weight: 700;
-    border: 2px solid var(--primary-rose); 
-    background-color: var(--primary-rose);
-    color: var(--secondary-green); 
-    text-align: center;
-    cursor: pointer;
-    transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease, box-shadow 0.2s ease, transform 0.2s ease; 
+  display: inline-block;
+  padding: 10px 30px;
+  font-size: 16px;
+  font-weight: 700;
+  border: 2px solid var(--primary-rose);
+  background-color: var(--primary-rose);
+  color: var(--secondary-green);
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease, border-color 0.3s ease,
+    color 0.3s ease, box-shadow 0.2s ease, transform 0.2s ease;
   color: var(--light-beige);
-    border-radius: 20px;
-    box-shadow: 0 0 0 4px var(--light-beige), 
-                0 0 0 6px var(--primary-rose);
+  border-radius: 20px;
+  box-shadow: 0 0 0 4px var(--light-beige), 0 0 0 6px var(--primary-rose);
 }
 
 .primary-button:hover {
-    box-shadow: 0 0 0 4px var(--primary-rose), 
-                0 0 0 6px var(--primary-rose); 
-                color: var(--dark-beige);
+  box-shadow: 0 0 0 4px var(--primary-rose), 0 0 0 6px var(--primary-rose);
+  color: var(--dark-beige);
 }
 
 .primary-button:active {
-    transform: scale(0.95);
+  transform: scale(0.95);
 }
 
 header a {
@@ -156,8 +154,8 @@ ul li:last-child {
 }
 
 .color-swatch-4 {
-    background-color: var(--light-beige);
-    border: 1px solid var(--dark-beige);
+  background-color: var(--light-beige);
+  border: 1px solid var(--dark-beige);
 }
 
 .textures li {
@@ -230,7 +228,6 @@ p[class*="font-details-"] {
   font-family: var(--secondary-font);
   color: #6f6f6f;
 }
-
 
 @media (min-width: 800px) {
   main {
