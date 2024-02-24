@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=Annapurna+SIL:wght@400;700&family=MonteCarlo&family=WindSong&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Days+One&display=swap");
+
+:root {
+  --primary-blue: #3a558c;
+  --yellow: #f2a71b;
+  --secondary-orange:  #f28f16;
+  --peach:  #f2c48d;
+  --brick:  #8c391b;
+
+  --primary-font: "MonteCarlo", cursive;
+  --secondary-font: "Annapurna SIL", serif;
+}
+  
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 100%;
+  font-family: var(--secondary-font);
+}
+
+body {
+  background-color: var(--light-beige);
+}
+
+header,
+main {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: calc(2 * var(--white-space));
+}
+
+ul li {
+  list-style: none;
+}
+
+.secondary-button {
+  display: inline-block;
+  margin-left: 1rem;
+  padding: 10px 30px;
+  font-size: 16px;
+  background-color: var(--secondary-green);
+  border: 2px solid var(--secondary-green);
+  color: var(--dark-beige);
+  font-weight: 700;
+  text-align: center;
+  border-radius: 25px;
+  transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease, box-shadow 0.2s ease, transform 0.2s ease; 
+  cursor: pointer;
+  box-shadow: 0 0 0 4px var(--secondary-green),
+  0 0 0 6px var(--secondary-green);
+}
+
+.secondary-button:hover {
+    box-shadow: 0 0 0 4px var(--light-beige), 
+                0 0 0 6px var(--secondary-green);
+                color: var(--light-beige);
+}
+
+.secondary-button:active {
+  transform: scale(0.95);
+}
+
+.primary-button {
+    display: inline-block;
+    padding: 10px 30px;
+    font-size: 16px;
+    font-weight: 700;
+    border: 2px solid var(--primary-rose); 
+    background-color: var(--primary-rose);
+    color: var(--secondary-green); 
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease, box-shadow 0.2s ease, transform 0.2s ease; 
+  color: var(--light-beige);
+    border-radius: 20px;
+    box-shadow: 0 0 0 4px var(--light-beige), 
+                0 0 0 6px var(--primary-rose);
+}
+
+.primary-button:hover {
+    box-shadow: 0 0 0 4px var(--primary-rose), 
+                0 0 0 6px var(--primary-rose); 
+                color: var(--dark-beige);
+}
+
+.primary-button:active {
+    transform: scale(0.95);
+}
+
+header a {
+  font-family: var(--secondary-font);
+  text-decoration: underline;
+  font-weight: 700;
+  color: var(--dark-beige);
+}
+
+.full-width {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  background: var(--rose2);
+  width: 100%;
+  color: var(--light-beige);
+}
+
+.header-wrapper h1 {
+  font-size: 3.5rem;
+  font-weight: bold;
+  font-family: var(--primary-font);
+}
+
+.header-wrapper h2 {
+  font-size: 1.6em;
+}
+
+.section-heading {
+  font-style: italic;
+  font-size: 1.3rem;
+  color: var(--dark-beige);
+  margin: 0.5rem 0;
+}
+
+ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+.swatches li {
+  margin-right: 5vw;
+  height: 15vw;
+  width: 20%;
+}
+
+ul li:last-child {
+  margin-right: 0;
+}
+
+.color-swatch-1 {
+  background-color: var(--primary-blue);
+}
+
+.color-swatch-2 {
+  background-color: var(--yellow);
+}
+
+.color-swatch-3 {
+  background-color: var(--secondary-orange);
+}
+
+.color-swatch-5 {
+  background-color: var(--peach);
+}
+
+.color-swatch-4 {
+    background-color: var(--brick);
+}
+
+.textures li {
+  height: 30vw;
+  width: 40%;
+  margin-right: 5vw;
+}
+
+.texture-swatch-1 {
+  background: url(../assets/happy1.png) no-repeat;
+  background-size: 100%;
+}
+
+.texture-swatch-2 {
+  background: url(../assets/happy2.png) center no-repeat;
+  background-size: 100%;
+}
+
+.texture-swatch-3 {
+  background: url(../assets/happy3.png) no-repeat;
+  background-size: 100%;
+}
+
+.typography-main {
+  color: var(--dark-beige);
+}
+
+.h1-sample {
+  font-size: 3.6rem;
+  font-weight: bold;
+  font-family: var(--primary-font);
+}
+
+.h2-sample {
+  font-family: var(--secondary-font);
+  font-weight: 700;
+  font-size: 1.8rem;
+}
+
+p.typography-sample {
+  font-family: var(--secondary-font);
+  font-weight: 500;
+  line-height: 1.5;
+  max-width: 960px;
+}
+
+strong {
+  font-weight: 700;
+}
+
+em {
+  font-style: italic;
+}
+
+.column a {
+  font-family: var(--secondary-font);
+  color: var(--dark-beige);
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+.column a:hover {
+  color: black;
+}
+
+p[class*="font-details-"] {
+  margin-top: 0.5rem;
+  margin-bottom: calc(2 * var(--white-space));
+  font-size: 0.75rem;
+  font-family: var(--secondary-font);
+  color: #6f6f6f;
+}
+
+
+@media (min-width: 800px) {
+  main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 4rem;
+  }
+
+  .swatches li {
+    margin-right: 3%;
+    height: 10vw;
+    width: 20%;
+  }
+
+  .textures li {
+    height: 15vw;
+  }
+}
+
+@media (min-width: 900px) {
+  .adjectives ul {
+    flex-direction: row;
+  }
+}
+
