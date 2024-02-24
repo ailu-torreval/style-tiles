@@ -89,7 +89,7 @@ ul li {
 
 .primary-button:hover {
   box-shadow: 0 0 0 4px var(--primary-rose), 0 0 0 6px var(--primary-rose);
-  filter: brightness(1.4);
+  filter: brightness(1.2);
   background-color: var(--yellow);
   border: 2px solid var(--yellow);
 }
