@@ -222,8 +222,8 @@ em {
 }
 
 p[class*="font-details-"] {
-  margin-top: 0.5rem;
-  margin-bottom: calc(2 * var(--white-space));
+  margin-top: 0.1rem;
+  margin-bottom: 0.75rem;
   font-size: 0.75rem;
   font-family: var(--secondary-font);
   color: #6f6f6f;
